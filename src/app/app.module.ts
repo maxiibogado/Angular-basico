@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeroesModule } from './heroes/heroes.module';
 import { ContadorModule } from './contador/contador.module';
+import { DbzModule } from './dbz/dbz.module';
 
 
 @NgModule({ // es el decorador
@@ -11,7 +12,7 @@ import { ContadorModule } from './contador/contador.module';
     AppComponent // es sobre los componentes que se están utilizando
   ],
   imports: [ // colocamos otros modulos
-    BrowserModule,HeroesModule,ContadorModule
+    BrowserModule,HeroesModule,ContadorModule,DbzModule
   ],
   providers: [], // son servicios especificos a un módulo
   bootstrap: [AppComponent] // es un componente principal

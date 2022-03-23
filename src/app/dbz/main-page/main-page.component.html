@@ -1,0 +1,23 @@
+<h1>Dragon Ball z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+       
+       <app-personajes ></app-personajes>
+       <!-- [personajes] se asocio a una propiedad y el nombre de personaje viene por el nombre de 
+        personaje.component 
+         de nuestra clase de main.pagecomponent
+    y se asocian personajes que es el que está en el main page
+    -->
+        
+    </div>
+
+    <div class="col">
+        <app-agregar 
+        [nuevo]="nuevo"
+        ></app-agregar>
+    </div>
+
+
+</div>

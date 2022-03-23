@@ -1,0 +1,15 @@
+<h3>Agregar <small>{{nuevo.nombre}}</small></h3>
+        <hr>
+        <form (ngSubmit)="agregar( )"> <!-- Puede recibir el evento con un signo $, nos interesa
+        el evento que se está disparando                                            -->
+             <input type="text" name="nombre" id="" placeholder="Nombre" [(ngModel)]="nuevo.nombre" >  
+
+          <!-- con los corchetes en ngModer le establezco valor, con los parenteris quiero 
+          escuchar tanto como emitir el evento y el evento, la propiedad del evento me interesa que
+        caiga en la propiedad nuevo.nombre  -->  
+         <!-- con los corchetes en value hago que el value apunte a nuevo.nombre de  main-page.ts-->
+         <!-- [value]="nuevo.nombre" (input)="cambiarNombre($event)" esto existe y es la alternativa con Js-->
+             <input type="number" name="poder" id="" placeholder="Poder"  [(ngModel)]="nuevo.poder" >
+
+             <button type="submit">Agregar</button> 
+         </form>  
